@@ -108,7 +108,7 @@ Day* Week::getDay(int day)
 Month::Month(Date* today, int yearNum, int monthNum, std::istream* iStream)
 {
 	this->today = today;
-	if (monthNum % 2 == 1)
+	if (monthNum % 2 == 0)
 	{
 		amountOfDays = 30;
 	}
